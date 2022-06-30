@@ -31,3 +31,12 @@ Images should be pre-processed in ImageJ as follows:
 5. Run ROF Denoise with a theta = 50 (Optional)
 6. Covert to 8 bit image
 7. Save image as .tif
+
+
+## cell_swelling_plot.py
+
+This script takes the .csv files output from the cell_swelling_analysis.py
+script and collects and normalizes the data to the pre-treatment (-1 sec)
+timepoint. It then plots the average of the data, along with the individual
+datapoints. It also creates images of the selected cells showing the maximum
+instensity projection (xy) and single yz and xz slices.
