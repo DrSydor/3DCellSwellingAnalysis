@@ -1,4 +1,4 @@
-# 3DCellSwellingAnalysis
+# 3D Cell Swelling Analysis
 Analysis of 3D cell volumes during cell swelling assays. There are two main scripts here: one for the actual analysis of the timelapse images (cell_swelling_analysis.py) and a second to plot the data and create xz and yz cross sections of each of the cells included in the analysis (cell_swelling_plots.py).
 
 
