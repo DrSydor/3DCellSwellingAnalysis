@@ -19,7 +19,7 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg
 
 times = [-1, 0, 68, 136, 204, 271, 1239, 2139, 3039, 3939] # in seconds
 
-path = r'D:\Dropbox (Brumell Lab)\Andrew Sydor\Trainee Projects\James- Rab10\Microscopy\Confocal\20220621- Cell swelling\WTwDynasore' # use your path
+path = r'D:\20220621- Cell swelling\WTwDynasore' # use your path
 all_files = glob.glob("*.csv")
 
 #Generates an initial dataframe using the rows from the initial (-1.csv) file
