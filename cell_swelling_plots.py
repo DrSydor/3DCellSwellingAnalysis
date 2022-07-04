@@ -49,7 +49,7 @@ fig, ax = plt.subplots(figsize = (6,4))
 ax.plot(av_col, 'bo-', label = 'Average')
 ax.errorbar(av_col.index, av_col[0], yerr = stdev_col)
 
-for n in range(len(df_norm.index)):
+for n in range(len(df_norm_og.index)):
     n += 1
     if n in bad_cells:
         pass
