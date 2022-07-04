@@ -159,37 +159,37 @@ for n in range(len(df_norm.index)):
                                                    cells_yz_contrasted[0],
                                                    cells_xz_contrasted[0]))
         axs['TopTopLeft'].axis('off')
-        axs['TopTopRight'].set_title(f'{timepoints[0]} sec')
+        axs['TopTopRight'].set_title(f'{timepoints[1]} sec')
         axs['TopTopRight'].imshow(cross_section_plots(cells_proj_contrasted[1],
                                                    cells_yz_contrasted[1],
                                                    cells_xz_contrasted[1]))
         axs['TopTopRight'].axis('off')
-        axs['TopLeft'].set_title(f'{timepoints[1]} sec')
+        axs['TopLeft'].set_title(f'{timepoints[2]} sec')
         axs['TopLeft'].imshow(cross_section_plots(cells_proj_contrasted[2],
                                                   cells_yz_contrasted[2],
                                                   cells_xz_contrasted[2]))
         axs['TopLeft'].axis('off')
-        axs['TopRight'].set_title(f'{timepoints[2]} sec')
+        axs['TopRight'].set_title(f'{timepoints[3]} sec')
         axs['TopRight'].imshow(cross_section_plots(cells_proj_contrasted[3],
                                                    cells_yz_contrasted[3],
                                                    cells_xz_contrasted[3]))
         axs['TopRight'].axis('off')
-        axs['MidLeft'].set_title(f'{timepoints[3]} sec')
+        axs['MidLeft'].set_title(f'{timepoints[4]} sec')
         axs['MidLeft'].imshow(cross_section_plots(cells_proj_contrasted[5],
                                                   cells_yz_contrasted[5],
                                                   cells_xz_contrasted[5]))
         axs['MidLeft'].axis('off')
-        axs['MidRight'].set_title(f'{timepoints[4]} sec')
+        axs['MidRight'].set_title(f'{timepoints[5]} sec')
         axs['MidRight'].imshow(cross_section_plots(cells_proj_contrasted[6],
                                                    cells_yz_contrasted[6],
                                                    cells_xz_contrasted[6]))
         axs['MidRight'].axis('off')
-        axs['BottomLeft'].set_title(f'{timepoints[5]} sec')
+        axs['BottomLeft'].set_title(f'{timepoints[6]} sec')
         axs['BottomLeft'].imshow(cross_section_plots(cells_proj_contrasted[8],
                                                      cells_yz_contrasted[8],
                                                      cells_xz_contrasted[8]))
         axs['BottomLeft'].axis('off')
-        axs['BottomRight'].set_title(f'{timepoints[6]} sec')
+        axs['BottomRight'].set_title(f'{timepoints[7]} sec')
         axs['BottomRight'].imshow(cross_section_plots(cells_proj_contrasted[9],
                                                       cells_yz_contrasted[9],
                                                       cells_xz_contrasted[9]))
