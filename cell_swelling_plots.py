@@ -30,16 +30,16 @@ for time in times:
     df2 = pd.read_csv(filename, index_col=0, usecols= [1,3], header=0)
     df[str(time)] = df2['area']
 
-df_norm = pd.DataFrame()
+df_norm_og = pd.DataFrame()
 
 for time in times:
     #col_name = str(time)
-    df_norm[time] = df[str(time)]/df['-1']
+    df_norm_og[time] = df[str(time)]/df['-1']
 
 # Bad cells; cells that were poorly segmented:
 bad_cells = [2,5,6,16,18,20,21,22]
 
-df_norm = df_norm.drop(bad_cells)
+df_norm = df_norm_og.drop(bad_cells)
 
 av_col = df_norm.mean(axis = 0).to_frame()
 stdev_col = df_norm.std().tolist()
@@ -85,7 +85,7 @@ cells_proj_contrasted = exposure.rescale_intensity(
     out_range=np.float32)
 
 
-for n in range(len(df_norm.index)):
+for n in range(len(df_norm_og.index)):
     axis_yz = int(df_coord.iloc[n]['centroid-1'])
     axis_xz = int(df_coord.iloc[n]['centroid-2'])
 
